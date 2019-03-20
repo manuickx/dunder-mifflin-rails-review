@@ -1,0 +1,7 @@
+<ul>
+  <%@employees.each do |emp|%>
+  <li>
+    <%= link_to emp.employee_to_s, employee_path(emp)%>
+  </li>
+  <%end%>
+</ul>
